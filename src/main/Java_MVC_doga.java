@@ -1,20 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package main;
 
-/**
- *
- * @author halasz.gergo
- */
+import modell.AutoModell;
+import nezet.AutoNezet;
+import vezerlo.AutoVezerlo;
+
 public class Java_MVC_doga {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        AutoModell auto = new AutoModell(); 
+        AutoNezet nezet = new AutoNezet();
+        new AutoVezerlo(auto, nezet);
     }
     
 }
